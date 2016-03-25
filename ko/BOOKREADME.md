@@ -18,7 +18,7 @@ This book is for those who want to learn how to write programs in Apple's progra
 The goal of this book is to write the most up to date content for Swift, with peer-reviewed content and examples to ensure accuracy. You need a certain level of understanding of how a computer works, such as:
 -->
 
-이 책은 정확성을 보장하기 위해 리뷰 과정을 거친 내용들과 예제들을 사용할 것이며, 이를 통해 최근 동향이 반영된 Swift 책을 작성하는 것을 목표로 합니다. 당신은 컴퓨터 동작 방식에 대한 약간의 지식이 필요합니다. 예를 들면 : 
+이 책은 정확성을 보장하기 위해, 리뷰 과정을 거친 내용들과 예제들을 사용할 것이며, 이를 통해 최근 동향이 반영된 Swift 책을 작성하는 것을 목표로 합니다. 당신은 컴퓨터 동작 방식에 대한 약간의 지식이 필요합니다. 예를 들면 : 
 
 <!---
 * How different parts of a computer work together.
