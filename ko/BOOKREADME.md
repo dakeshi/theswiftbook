@@ -43,6 +43,6 @@ Swift is available for both Mac OS X and Linux. The majority of this book's cont
 
 For a list of available Swift releases, [visit this page](https://swift.org/download/#releases).
 -->
-Swift 는 Mac OS X 와 Linux 에서 동작합니다. 이 책은 Mac OS X 의 특정 패키지나 소프트웨어에 의존하지 않는 순수한 Swift 프로그래밍 언어에 초점을 맞춰 내용을 구성할 것입니다. 따라서, 이 책을 통해 배운 내용은 Swift 가 지원하는 모든 플랫폼에서 동일하게 적용된다고 생각하시면 됩니다.
+Swift 는 Mac OS X 와 Linux 에서 동작합니다. 이 책은 Mac OS X 의 특정 패키지나 소프트웨어에 의존하지 않는 순수한 Swift 프로그래밍 언어에 초점을 맞춰 내용을 구성할 것입니다. 따라서, 이 책을 통해 배운 내용은 Swift 를 지원하는 모든 플랫폼에서 동일하게 적용된다고 생각하시면 됩니다.
 
-Swift 를 이용할 수 있는 플랫폼을 확인하시려면, [이 페이지를 방문하세요](https://swift.org/download/#releases). For a list of available Swift releases, [visit this page](https://swift.org/download/#releases).
+Swift 를 이용할 수 있는 플랫폼을 확인하시려면, [이 페이지를 방문하세요](https://swift.org/download/#releases).
