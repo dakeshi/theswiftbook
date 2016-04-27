@@ -65,7 +65,7 @@ If you are sure that optionals have a value, you can access its underlying value
 
 ### `optional binding`
 
-If an optional contains a value, you can assign its value to a temporary constant or variable. It is called `optional binding`. For example:
+An optional can bind its value to a constant or variable. It is called `optional binding`. For example:
 
 ```swift
 if let cityTwoName = cityTwo {
