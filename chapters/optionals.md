@@ -24,10 +24,10 @@ In order to access a value which contains in an instance of an optional type, yo
 Here is a simple way of creating an optional type:
 
 ```swift
-let cityOne: Optional<String> = "Stockholm" // 1
-let cityTwo: String? = "Stockholm" // 2
-let cityThree: String? = Optional.Some("Stockholm") // 3
-let cityFour = Optional.Some("Stockholm") // 4
+let cityOne: Optional<String> = "Stockholm" // "Stockholm"
+let cityTwo: String? = "Stockholm" // "Stockholm"
+let cityThree: String? = Optional.Some("Stockholm") // "Stockholm"
+let cityFour = Optional.Some("Stockholm") // "Stockholm"
 ```
 
 They are equivalent. Instead of `Optional<Wrapped>`, you can use `?` with an actual type to make simple syntax expression. It's the most preferred way to create the optional type.
@@ -36,15 +36,64 @@ Also, you can have no value using the optional type:
 
 ```swift
 let cityFive: String? = Optional.None
-let citySeven: String? = nil
-let cityEight: String?
+let citySix: String? = nil
+let citySeven: String? // nil
 ```
 
 If you declare an optional variable, constant or property without an initial value, it will have a default value of `nil`.
 
 ## [Safely Unwrapping](#safely-unwrapping)
 
-TODO: tell the reader how they can use the `guard` or `if let` to safely unwrap values inside optionals
+Because optionals might be `nil`, you need to check optionals whether or not it contains `nil`. There can be multiple solutions to unwrap it safely:
+
+* `if` statement with `nil`
+* `optional binding`
+* `guard` statement with `optional binding`
+
+### `if` statement with `nil`
+
+Simply, you can use `if` statement for checking optionals. For example:
+
+```swift
+if cityOne != nil {
+  // Surely, a cityOne has a value.
+  print("cityOne is \(cityOne!)")
+}
+```
+
+If you are sure that optionals have a value, you can access its underlying value using an exclamation mark, such as `cityOne!`. It's very [dangerous](implicitly_unwrapped_optionals.md#dangers) to use an optional with `!` when an optional has no value.
+
+### `optional binding`
+
+If an optional contains a value, you can assign its value to a temporary constant or variable. It is called `optional binding`. For example:
+
+```swift
+if let cityTwoName = cityTwo {
+  print("cityTwoName = \(cityTwoName)")
+}
+```
+
+Compared to the above solution, you don't need to use the ! suffix to access its value. It has already been safely unwrapped through `optional binding`.
+
+### `guard` statement with `optional binding`
+
+Also, you can use `guard` statement with `optional binding`. For example:
+
+```swift
+guard let cityOneName = cityOne else {
+  return
+}
+
+guard let cityFiveName = cityFive else {
+  // The value of an optional constant,`cityFive`, is nil. So, `else` clause is executed.
+  return
+}
+
+print("cityOneName = \(cityOneName)") // cityOneName = Stockholm
+```
+
+If constants or variables is declared in `guard` statement, you will use them without an exclamation mark, such as `cityOneName!`. In the above example, the `print` method uses `\(cityOneName)` instead of `\(cityOneName!)` because `cityOneName` constant is declared in `guard` statement.
+
 
 ## [Force Unwrapping](#force-unwrapping)
 
