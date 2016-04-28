@@ -61,11 +61,11 @@ if cityOne != nil {
 }
 ```
 
-If you are sure that optionals have a value, you can access its underlying value using an exclamation mark, such as `cityOne!`. It's very [dangerous](implicitly_unwrapped_optionals.md#dangers) to use an optional with `!` when an optional has no value.
+If you are sure that optionals have a value, you can access its underlying value using an exclamation mark, such as `cityOne!`. It's very [dangerous](#force-unwrapping) to use an optional with `!` when an optional has no value.
 
 ### `optional binding`
 
-An optional can bind its value to a constant or variable. It is called `optional binding`. For example:
+An optional can bind its value to a constant or variable. So, it is called `optional binding`. For example:
 
 ```swift
 if let cityTwoName = cityTwo {
@@ -73,7 +73,7 @@ if let cityTwoName = cityTwo {
 }
 ```
 
-Compared to the above solution, you don't need to use the ! suffix to access its value. It has already been safely unwrapped through `optional binding`.
+Compared to the above solution, you don't need to use the `!` suffix to access its value within `if` block. It has already been safely unwrapped through `optional binding`.
 
 ### `guard` statement with `optional binding`
 
