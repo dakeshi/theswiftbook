@@ -92,7 +92,7 @@ guard let cityFiveName = cityFive else {
 print("cityOneName = \(cityOneName)") // cityOneName = Stockholm
 ```
 
-If constants or variables is declared in `guard` statement, you will use them without an exclamation mark, such as `cityOneName!`. In the above example, the `print` method uses `\(cityOneName)` instead of `\(cityOneName!)` because `cityOneName` constant is declared in `guard` statement.
+If constants or variables is declared in `guard` statement, you will use them without an exclamation mark, such as `cityOneName!`. In the above example, the `print` function uses `\(cityOneName)` instead of `\(cityOneName!)` because `cityOneName` constant is declared in `guard` statement.
 
 
 ## [Force Unwrapping](#force-unwrapping)
