@@ -73,7 +73,7 @@ if let cityTwoName = cityTwo {
 }
 ```
 
-Compared to the above solution, you don't need to use the `!` suffix to access its value within `if` block. It has already been safely unwrapped through `optional binding`.
+Compared to the above solution, you don't need to use the `!` suffix to access a value of an optional within `if` block. It has already been safely unwrapped and binded to a constant called `cityTowName` through `optional binding`.
 
 ### `guard` statement with `optional binding`
 
