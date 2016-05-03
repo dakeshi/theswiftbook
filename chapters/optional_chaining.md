@@ -14,11 +14,11 @@ struct Person{
 }
 ```
 
-A `Person` structure has an optional property called `name` of type `Name` and the `Name` structure has an optional `value` property that holds a person's name essentially.
+A `Person` structure has an optional property called `name` of type `Name` and the `Name` structure has an optional `value` property that can hold a person's name.
 
-Now you are tasked with writing a function called `processNameFor(_:)` that takes in an optional instance of `Person` (as in `Person?`), and does some work with that person's name.
+Now you are tasked with writing a method called `processNameFor(_:)` that takes in an optional instance of `Person` (as in `Person?`), and does some work with that person's name.
 
-In order for this function to access the underlying `value` of the name of the optional person, it has to unwrap the optional values all the way down to `value` as shown here:
+In order for this method to access the underlying `value` of the name of the optional person, it has to unwrap the optional values all the way down to `value` as shown here:
 
 ```swift
 func processNameFor(person: Person?){
@@ -35,11 +35,11 @@ func processNameFor(person: Person?){
 }
 ```
 
-This can easily get quite cumbersome to type and difficult understand. The solution to this is using Swift's optional chaining capabilities to read the `value` field of the `name` property of the `Person` instance only if the person exist and has a valid `Name` instance set for it.
+This can easily get quite cumbersome to type and difficult understand. The solution to this is using Swift's optional chaining capabilities to the optional values safely.
 
 ## [Usage](#usage)
 
-You can use the `?` optional unwrapper at the end of every optional value in order to access a property or a function of that value, only if the value itself is backed by a real instance of the type, and not `nil`.
+Optional chaining is successful only all of optionals in the chain contain a value. If a value of an optional in the chain is `nil`, the whole chain fails and returns `nil`.
 
 So we can replace the previous example with the following:
 
@@ -51,20 +51,22 @@ func processNameFor(person: Person?){
     return
   }
   
-  //now we have access to str that is the actual name of a person
+  //now we have access to name that is the actual name of a person
   
 }
 ```
 
 Where:
-* `person?`: optionally gives us access to all its properties and functions should the `person` argument itself be a valid instance of the `Person` structure.
-* `name?`: optionally gives us access to all properties and functions of the `Name` structure should both person and its name be valid instances of `Person` and `Name` in that order.
+* `person?`: optionally gives us access to all its properties and methods should the `person` argument itself be a valid instance of the `Person` structure.
+* `name?`: optionally gives us access to all properties and methods of the `Name` structure should both person and its name be valid instances of `Person` and `Name` in that order.
 
 The general syntax for optional chaining is:
 
 ```swift
 let someOptionalValue = optional1?.optional2?.optional3
 ```
+
+The return value of optional chaining is always an optional value. You can then [safely unwrap](optionals.md#safely-unwrapping) the optional to read its value.
 
 ## [In Dictionaries](#in-dictionaries)
 
@@ -92,17 +94,17 @@ let dict = [
     ],
     "key1.2" : [
       "key1.2.1" : "value1.2.1",
-      "key1.2.2" : "value1.2.2",
+      "key1.2.2" : "value1.2.2"
     ]
   ],
   "key2" : [
     "key2.1" : [
       "key2.1.1" : "value2.1.1",
-      "key2.1.2" : "value2.1.2",
+      "key2.1.2" : "value2.1.2"
     ],
     "key2.2" : [
       "key2.2.1" : "value2.2.1",
-      "key2.2.2" : "value2.2.2",
+      "key2.2.2" : "value2.2.2"
     ]
   ]
 ]
