@@ -16,9 +16,9 @@ struct Person{
 
 A `Person` structure has an optional property called `name` of type `Name` and the `Name` structure has an optional `value` property that can hold a person's name.
 
-Now you are tasked with writing a function called `processNameFor(_:)` that takes in an optional instance of `Person` (as in `Person?`), and does some work with that person's name.
+Now you are tasked with writing a method called `processNameFor(_:)` that takes in an optional instance of `Person` (as in `Person?`), and does some work with that person's name.
 
-In order for this function to access the underlying `value` of the name of the optional person, it has to unwrap the optional values all the way down to `value` as shown here:
+In order for this method to access the underlying `value` of the name of the optional person, it has to unwrap the optional values all the way down to `value` as shown here:
 
 ```swift
 func processNameFor(person: Person?){
@@ -39,7 +39,7 @@ This can easily get quite cumbersome to type and difficult understand. The solut
 
 ## [Usage](#usage)
 
-You can use the `?` optional unwrapper at the end of every optional value in a chain, until either a value in the chain is `nil`, in which case the whole chain is broken, *or* the final statement in the chain contains a value in which case you can read it.
+Optional chaining is successful only all of optionals in the chain contain a value. If a value of an optional in the chain is `nil`, the whole chain fails and returns `nil`.
 
 So we can replace the previous example with the following:
 
@@ -57,8 +57,8 @@ func processNameFor(person: Person?){
 ```
 
 Where:
-* `person?`: optionally gives us access to all its properties and functions should the `person` argument itself be a valid instance of the `Person` structure.
-* `name?`: optionally gives us access to all properties and functions of the `Name` structure should both person and its name be valid instances of `Person` and `Name` in that order.
+* `person?`: optionally gives us access to all its properties and methods should the `person` argument itself be a valid instance of the `Person` structure.
+* `name?`: optionally gives us access to all properties and methods of the `Name` structure should both person and its name be valid instances of `Person` and `Name` in that order.
 
 The general syntax for optional chaining is:
 
