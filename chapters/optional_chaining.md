@@ -39,7 +39,7 @@ This can easily get quite cumbersome to type and difficult understand. The solut
 
 ## [Usage](#usage)
 
-You can use the `?` optional unwrapper at the end of every optional value in order to access a property or a function of that value, only if the value itself is backed by a real instance of the type, and not `nil`.
+You can use the `?` optional unwrapper at the end of every optional value in a chain, until either a value in the chain is `nil`, in which case the whole chain is broken, *or* the final statement in the chain contains a value in which case you can read it.
 
 So we can replace the previous example with the following:
 
