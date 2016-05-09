@@ -1,6 +1,6 @@
 # Arrays
 
-TODO: explain what an array is and how it is useful for us.
+Arrays are an ordered list of values with the same type. And it allows to include the same value repeatedly in the array. So, using an array type, we can easily implement some data set, such as "Top 100 Universities in the world". If a variable is declared with an array type, it will be mutable. It means that you can change its value with the new ones, delete its value, or add the new value in the array. Because values of an array are stored with an order, we can enumerate its value in sequence or get a specific value using an index. Also, an array type provides several convenient methods, such as count, filter, map, zip and reduce.
 
 ## [Syntax](#syntax)
 
@@ -33,4 +33,3 @@ TODO: explain the `zip()` function on arrays and tell the reader when it is usef
 ## [Reducing](#reducing)
 
 TODO: explain the `reduce()` function on arrays and tell the reader when it is useful to use `reduce()`
-
