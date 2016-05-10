@@ -1,6 +1,6 @@
 # Arrays
 
-Arrays are an ordered, random-access collection of values with the same type. Because elements of an array are stored with an order, you can enumerate its value in sequence. Also, you can get a specific value using an index. An array allows to hold the same value repeatedly in the array. As these features of an array, you can easily implement some data collection, such as "Top 100 Universities in the world". If a variable is declared with an array type, it will be mutable. It means that you can change its value with the new ones, remove its element, or add the new value in the array. You can easily dealt with elements of an array or an array itself using its properties and related methods, such as count, filter, map, zip and reduce.
+Arrays are an ordered, random-access collection of values with the same type. Because elements of an array are stored with an order, you can enumerate its value in sequence. Also, you can get a specific value using an index. An array allows to hold the same value repeatedly in the array. As these features of an array, you can easily implement some data collection, such as "Top 100 Universities in the world". If a variable is declared with an array type, it will be mutable. It means that you can change its value with the new ones, remove its element, or add the new value in the array. To more concise code, an array provides default implementations for many common operations, such as count, filter, map, zip and reduce.
 
 ## [Syntax](#syntax)
 
