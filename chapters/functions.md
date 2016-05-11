@@ -61,7 +61,7 @@ func fullName(
 }
 ```
 
-You will learn more about function arguments later.
+You will learn more about function arguments later (see here).
 
 
 TODO: give a few examples of functions and explain their syntax, with and without arguments or return values and then link the user to other sections under the Functions super section, such as [Arguments](function_arguments.md), [Return Type](function_return_type.md), etc
