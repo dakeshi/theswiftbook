@@ -41,8 +41,8 @@ Note how the [`return`](function_return_type.md) statement is used to return a v
 You can also have a list of arguments for your function with their names and data types:
 
 ```swift
-func fullName(firstName: [String](string.md), lastName: [String](string.md)) -> [String](string.md){
-  [return](function_return_type.md) firstName + " " + lastName;
+func fullName(firstName: String, lastName: String) -> String{
+  return firstName + " " + lastName;
 }
 ```
 
