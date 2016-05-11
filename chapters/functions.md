@@ -28,7 +28,9 @@ func emptyFunction(){
 }
 ```
 
-Sh
+Should you wish to return a value from your function, you can specify that with the `->` syntax followed by your return value data type:
+
+
 
 TODO: give a few examples of functions and explain their syntax, with and without arguments or return values and then link the user to other sections under the Functions super section, such as [Arguments](function_arguments.md), [Return Type](function_return_type.md), etc
 
