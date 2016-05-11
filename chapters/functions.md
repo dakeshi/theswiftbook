@@ -65,7 +65,7 @@ You will learn more about function arguments later ([see here](function_argument
 
 ## [Versus Properties](#versus-properties)
 
-[Structures](structures.md) and [classes](classes.md) can have functions; and so can they have [properties](properties.md) too. A property has a data type, such as [String](string.md), and so does a function. The only thing that differentiates a property and a function is that the former cannot have [arguments](function_arguments.md), while the latter can.
+[Structures](structures.md) and [classes](classes.md) can have functions; and so can they have [properties](properties.md) too. A property has a data type, such as [String](string.md), and so does a function. The only thing that differentiates a property and a function is that the former cannot have [arguments](function_arguments.md), while the latter can. For instance, should you need to know the height of an image given its width, you should implement a function, that takes in the width of the image as an argument, rather than using a property.
 
 TODO: explain where a function is more useful than a property. it usually comes down to the fact that a property is a function without arguments but perhaps there are other cases (such as functional programming) where functions are more useful
 
