@@ -16,7 +16,7 @@ enum Optional<Wrapped> {
 
 `<Wrapped>` means that it is [`generic type`](generics.md). Therefore, you can use optionals with any type. An actual optional type will be determined when an optional variable or constant is declared.
 
-In order to access a value which contains in an instance of an optional type, you can use `safely unwrapping` or `forced unwrapping`. Recall how the optional enumeration is. Because a value is `wrapped` in the `Optional` enumeration, we need to take `unwrap` process.
+In order to access a value which contains in an instance of an optional type, you can use _safely unwrapping_ or _forced unwrapping_. Recall how the optional enumeration is. Because a value is `wrapped` in the `Optional` enumeration, we need to take _unwrap_ process.
 
 
 ## [Syntax](#syntax)
@@ -37,18 +37,17 @@ Also, you can have no value using the optional type:
 ```swift
 let cityFive: String? = Optional.None
 let citySix: String? = nil
-let citySeven: String? // nil
+var citySeven: String? // nil
 ```
 
-If you declare an optional variable, constant or property without an initial value, it will have a default value of `nil`.
+If you declare an optional variable without an initial value, it will have a default value of nil. For more information about an initialization, see [struct initializers](struct_initializers.md) and [class initializers](class_initializers.md) documents.
 
 ## [Safely Unwrapping](#safely-unwrapping)
 
-Because optionals might be `nil`, you need to check optionals whether or not it contains `nil`. There can be multiple solutions to unwrap it safely:
+Since optionals might contain no values, before using them, you need to ensure that they indeed contain a value. There can be multiple solutions to unwrap it safely:
 
 * `if` statement with `nil`
-* `optional binding`
-* `guard` statement with `optional binding`
+* optional binding
 
 ### `if` statement with `nil`
 
@@ -61,11 +60,11 @@ if cityOne != nil {
 }
 ```
 
-If you are sure that optionals have a value, you can access its underlying value using an exclamation mark, such as `cityOne!`. It's very [dangerous](#force-unwrapping) to use an optional with `!` when an optional has no value.
+If you are sure that optionals have a value, you can access its underlying value using an exclamation mark, such as `cityOne!`. Be careful when you use an optional with `!`.  If an optional has no value, it will report a compile-time error.
 
-### `optional binding`
+### optional binding
 
-An optional can bind its value to a constant or variable. So, it is called `optional binding`. For example:
+An optional can bind its value to a constant or variable. So, it is called _optional binding_. For example:
 
 ```swift
 if let cityTwoName = cityTwo {
@@ -73,11 +72,9 @@ if let cityTwoName = cityTwo {
 }
 ```
 
-Compared to the above solution, you don't need to use the `!` suffix to access a value of an optional within `if` block. It has already been safely unwrapped and binded to a constant called `cityTwoName` through `optional binding`.
+Compared to the above solution, you don't need to use the `!` suffix to access a value of an optional within `if` block. It has already been safely unwrapped and bound to a constant called `cityTwoName` through _optional binding_.
 
-### `guard` statement with `optional binding`
-
-Also, you can use `guard` statement with `optional binding`. For example:
+Also, you can use `guard` statement with _optional binding_. For example:
 
 ```swift
 guard let cityOneName = cityOne else {
