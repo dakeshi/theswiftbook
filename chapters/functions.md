@@ -38,13 +38,29 @@ func myName() -> String{
 
 Note how the [`return`](function_return_type.md) statement is used to return a value of the promised data type.
 
-You can also have a list of arguments for your function with their names and data types:
+You can also have a list of [arguments](function_arguments.md) for your function with their names and data types:
 
 ```swift
 func fullName(firstName: String, lastName: String) -> String{
   return firstName + " " + lastName;
 }
 ```
+
+Function arguments can have two names:
+
+1. Internal
+2. External
+
+The internal function argument names are only used within the function body (inside the curly brackets) while the external names are used by the caller. Taking the previous example, the function's body uses the `fistName` and `lastName` arguments, just like the caller does. You can however change the function's definition so that inside the function's body you can refer to the arguments with another name, such as `fName` for `firstName` and `lName` for `lastName`:
+
+```swift
+func fullName(
+  firstName fName: String,
+  lastName lName: String) -> String{
+  return fName + " " + lName;
+}
+```
+
 
 TODO: give a few examples of functions and explain their syntax, with and without arguments or return values and then link the user to other sections under the Functions super section, such as [Arguments](function_arguments.md), [Return Type](function_return_type.md), etc
 
