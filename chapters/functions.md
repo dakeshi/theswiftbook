@@ -12,6 +12,10 @@ Therefore, we should encapsulate our downloading code into a function or series 
 
 ## [Syntax](#syntax)
 
+The syntax for a function is made out of a few components:
+
+1. The `func` reserved word: to indicate the beginning of a function declaration
+2. The name of the function that should follow the CamelCase naming convention.
 
 
 TODO: give a few examples of functions and explain their syntax, with and without arguments or return values and then link the user to other sections under the Functions super section, such as [Arguments](function_arguments.md), [Return Type](function_return_type.md), etc
