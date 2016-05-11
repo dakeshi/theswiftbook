@@ -63,10 +63,9 @@ func fullName(
 
 You will learn more about function arguments later ([see here](function_arguments.md)).
 
-
-TODO: give a few examples of functions and explain their syntax, with and without arguments or return values and then link the user to other sections under the Functions super section, such as [Arguments](function_arguments.md), [Return Type](function_return_type.md), etc
-
 ## [Versus Properties](#versus-properties)
+
+[Structures](structures.md) and [classes](classes.md) can have functions; and so can they have [properties](properties.md) too. A property has a data type, such as [String](string.md), and so does a function. The only thing that differentiates a property and a function is that the former cannot have [arguments](function_arguments.md), while the latter can.
 
 TODO: explain where a function is more useful than a property. it usually comes down to the fact that a property is a function without arguments but perhaps there are other cases (such as functional programming) where functions are more useful
 
