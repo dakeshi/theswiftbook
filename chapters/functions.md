@@ -22,7 +22,11 @@ The syntax for a function is made out of a few components:
 
 Given the 2 optional components in this list, you can create functions that only have a name, and nothing else, as shown here:
 
-
+```swift
+func emptyFunction(){
+  //empty
+}
+```
 
 
 TODO: give a few examples of functions and explain their syntax, with and without arguments or return values and then link the user to other sections under the Functions super section, such as [Arguments](function_arguments.md), [Return Type](function_return_type.md), etc
