@@ -16,11 +16,11 @@ The syntax for a function is made out of a few components:
 
 1. The `func` reserved word: to indicate the beginning of a function declaration
 2. The name of the function that should follow the [CamelCase](https://en.wikipedia.org/wiki/CamelCase) naming convention
-3. An optional list of arguments, with their names and their types
-4. An optional return value type
+3. An optional list of [arguments](function_arguments.md), with their names and their types
+4. An optional [return value type](function_return_type.md)
 5. Curly brackets, within which the contents of the function will be written
 
-Given the 2 optional components in this lis, you can create functions that only have a name, and nothing else, as shown here:
+Given the 2 optional components in this list, you can create functions that only have a name, and nothing else, as shown here:
 
 
 
