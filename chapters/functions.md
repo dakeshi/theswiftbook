@@ -20,7 +20,7 @@ The syntax for a function is made out of a few components:
 4. An optional return value type
 5. Curly brackets, within which the contents of the function will be written
 
-Given the 2 optional components in this lst, you can create functions that only have a name, and nothing else, as shown here:
+Given the 2 optional components in this lis, you can create functions that only have a name, and nothing else, as shown here:
 
 
 
