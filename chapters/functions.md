@@ -40,7 +40,11 @@ Note how the [`return`](function_return_type.md) statement is used to return a v
 
 You can also have a list of arguments for your function with their names and data types:
 
-
+```swift
+func fullName(firstName: String, lastName: String) -> String{
+  return firstName + " " + lastName;
+}
+```
 
 TODO: give a few examples of functions and explain their syntax, with and without arguments or return values and then link the user to other sections under the Functions super section, such as [Arguments](function_arguments.md), [Return Type](function_return_type.md), etc
 
