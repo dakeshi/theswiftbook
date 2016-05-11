@@ -18,6 +18,7 @@ The syntax for a function is made out of a few components:
 2. The name of the function that should follow the [CamelCase](https://en.wikipedia.org/wiki/CamelCase) naming convention
 3. An optional list of arguments, with their names and their types
 4. An optional return value type
+5. Curly brackets, within which the contents of the function will be written
 
 Given the fact that the last 2 components are optional, you can create functions that only have a name, and nothing else, as shown here:
 
