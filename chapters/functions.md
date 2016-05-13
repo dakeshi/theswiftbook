@@ -8,7 +8,7 @@ A part of being a software engineer is to write as little code as possible in or
 
 All these problems have downloading in common, in that we first have to download the contents and then do something with them. As a programmer, we need to ensure that we don't write the downloading code 3 times. Instead, we need to strive to write it once and reuse it in other places.
 
-Therefore, we should encapsulate our downloading code into a function or series of functions that can be placed inside a [structure](structures.md) or a [class](classes.md).
+Therefore, we should encapsulate our shared task into a function or series of functions that can be placed inside a [structure](structures.md) or a [class](classes.md).
 
 A function is made out of line(s) of code and it knows how to deal with a specific task. Usually, a function has a name, unless it is passed to another function as an argument, in which case the receiving function assigns a name to it ([see here](functions_passed_to_other_functions.md)). We can call functions using their names whenever we need their functionality.
 
