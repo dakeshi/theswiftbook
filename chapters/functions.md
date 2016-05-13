@@ -10,6 +10,8 @@ All these problems have downloading in common, in that we first have to download
 
 Therefore, we should encapsulate our downloading code into a function or series of functions that can be placed inside a [structure](structures.md) or a [class](classes.md).
 
+A function is made out of line(s) of code. It knows how to dealt with a specific task. Usually, a function has a name. So, we can call it using its name whenever you needs its functionality.
+
 ## [Syntax](#syntax)
 
 The syntax for a function is made out of a few components:
