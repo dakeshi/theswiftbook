@@ -67,6 +67,6 @@ You will learn more about function parameters later ([see here](function_paramet
 
 ## [Versus Properties](#versus-properties)
 
-[Structures](structures.md) and [classes](classes.md) can have functions; and so can they have [properties](properties.md) too. A property has a data type, such as [String](string.md), and so does a function. The only thing that differentiates a property and a function is that the former cannot have [arguments](function_arguments.md), while the latter can.
+[Structures](structures.md) and [classes](classes.md) can have functions; and so can they have [properties](properties.md) too. A property has a data type, such as [String](string.md), and so does a function. The only thing that differentiates a property and a function is that the former cannot have [parameters](function_parameters.md), while the latter can.
 
 Functions are also useful in functional chaining, a functional programming related concept that you can learn more about soon ([see here](functional_programming.md)), whereas in Swift properties cannot be chained since they cannot be defined as data types. [Functions on the other hand can be defined as types](functions_defined_as_types.md).
