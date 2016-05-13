@@ -21,6 +21,9 @@ Function parameters have the following properties:
 * A data type (e.g. [String](string.md), [Int](integer.md), [Double](double.md))
 * [Variadic](#variadic) suffix (`...`)
 
+Function parameter names contribute to the overal name of a function, where the first parameter's name is implicitly left off of the function signature. For instance:
+
+
 
 ## [Examples](#examples)
 
