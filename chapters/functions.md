@@ -53,7 +53,7 @@ Function parameters can have two names:
 1. Internal
 2. External
 
-The internal function argument names are only used within the function body (inside the curly brackets) while the external names are used by the caller. Taking the previous example, the function's body uses the `fistName` and `lastName` arguments, just like the caller does. You can however change the function's definition so that inside the function's body you can refer to the arguments with another name, such as `fName` for `firstName` and `lName` for `lastName`:
+The internal function parameter names are only used within the function body (inside the curly brackets) while the external names are used by the caller. Taking the previous example, the function's body uses the `fistName` and `lastName` parameters, just like the caller does. You can however change the function's definition so that inside the function's body you can refer to the arguments with another name, such as `fName` for `firstName` and `lName` for `lastName`:
 
 ```swift
 func fullName(
