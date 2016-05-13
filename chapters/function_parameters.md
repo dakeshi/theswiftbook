@@ -15,6 +15,7 @@ The act of going shopping is the function that you will perform and all the item
 
 Function parameters have the following properties:
 
+* 
 * An internal name
 * An external name
 * A data type
