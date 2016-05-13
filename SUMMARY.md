@@ -16,7 +16,7 @@
        * [Chaining](chapters/optional_chaining.md)
        * [Implicitly Unwrapped](chapters/implicitly_unwrapped_optionals.md)
    * [Functions](chapters/functions.md)
-       * [Arguments](chapters/function_arguments.md)
+       * [Arguments](chapters/function_parameters.md)
        * [Return Type](chapters/function_return_type.md)
        * [Stored in Variables](chapters/functions_stored_in_variables.md)
        * [Passed to Other Functions](chapters/functions_passed_to_other_functions.md)
