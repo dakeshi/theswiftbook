@@ -1,2 +1,2 @@
-# Arguments
+# Parameters
 
