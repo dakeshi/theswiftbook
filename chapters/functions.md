@@ -40,7 +40,7 @@ func myName() -> String{
 
 Note how the [`return`](function_return_type.md) statement is used to return a value of the promised data type.
 
-You can also have a list of [arguments](function_arguments.md) for your function with their names and data types:
+You can also have a list of [parameters](function_parameters.md) for your function with their names and data types:
 
 ```swift
 func fullName(firstName: String, lastName: String) -> String{
