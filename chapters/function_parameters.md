@@ -2,6 +2,18 @@
 
 TODO: tell the reader what arguments are in a function and why they are useful and give examples of their syntax. also tell the reader about the fact that by default, the first argument of a function is not named when the function is called
 
+A function, [as we discussed previously](functions.md), can optionally have parameters. Think of a parameter as an input to the function, so that the function can carry out its job as it should.
+
+For instance, imagine that you are tasked with going shopping for a big dinner party tonight. What you need is:
+
+* A list of things to buy
+* Money
+* Location of the store(s) where to purchase the goods
+* Time
+
+The act of going shopping is the function that you will perform and all the items that were just listed will be the parameters to your function. In other words, you won't be able to go shopping if any of the aforementioned parameters/inputs are missing.
+
+
 ## [External Name](#external-name)
 
 TODO: talk about external argument names here. Give examples
