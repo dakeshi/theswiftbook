@@ -10,7 +10,7 @@ All these problems have downloading in common, in that we first have to download
 
 Therefore, we should encapsulate our shared task into a function or series of functions that can be placed inside a [structure](structures.md) or a [class](classes.md).
 
-A function is made out of line(s) of code and it knows how to deal with a specific task. Usually, a function has a name, unless it is passed to another function as an argument, in which case the receiving function assigns a name to it ([see here](functions_passed_to_other_functions.md)). We can call functions using their names whenever we need their functionality.
+A function is made out of line(s) of code and it knows how to deal with a specific task. Usually, a function has a name, unless it is passed to another function as a parameter, in which case the receiving function assigns a name to it ([see here](functions_passed_to_other_functions.md)). We can call functions using their names whenever we need their functionality.
 
 ## [Syntax](#syntax)
 
