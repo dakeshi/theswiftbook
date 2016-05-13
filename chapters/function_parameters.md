@@ -22,7 +22,7 @@ Function parameters have the following properties:
 
 ## [Examples](#examples)
 
-Here is an example of a function with 1 parameter of tpye 
+TODO: give as many examples as possible
 
 ## [External Name](#external-name)
 
