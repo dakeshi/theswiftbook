@@ -21,6 +21,8 @@ Function parameters have the following properties:
 * A data type (e.g. [String](string.md), [Int](integer.md), [Double](double.md))
 * [Variadic](#variadic) suffix (`...`)
 
+Note: variadic parameters cannot be `inout`.
+
 
 
 ## [Examples](#examples)
