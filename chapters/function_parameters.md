@@ -34,7 +34,21 @@ func name(shortened: Bool) -> String{
 
 The name of this function is `name(_:)`. Pay attention to the `_:` syntax where `_` means _something_ in Swift and `:` denotes that _something_ is a parameter. All parameters except the first one will have their names implicitly mentioned as part of the function's signature. Take a look at this function:
 
+```swift
+func name(shortened: Bool, withoutSpace: Bool) -> String{
+  if shortened{
+    return "Foo"
+  }
+  
+  if withoutSpace{
+    return "FooBar"
+  }
+  
+  return "Foo Bar"
+}
+```
 
+The name of this function is `name(_:withoutSpace:)`.
 
 ## [Examples](#examples)
 
