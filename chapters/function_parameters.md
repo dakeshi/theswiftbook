@@ -23,7 +23,16 @@ Function parameters have the following properties:
 
 Function parameter names contribute to the overal name of a function, where the first parameter's name is implicitly left off of the function signature. For instance:
 
+```swift
+func name(shortened: Bool) -> String{
+  if shortened{
+    return "Foo"
+  }
+  return "Foo Bar"
+}
+```
 
+The name of this function is `name(_:)`. Pay attention to the `_:` syntax where `_` means _something_ in Swift and `:` denotes that _something_ is a parameter
 
 ## [Examples](#examples)
 
