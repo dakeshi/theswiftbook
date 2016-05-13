@@ -41,5 +41,8 @@ TODO: talk about camelCase and link even to Wikipedia if necessary where they ex
 
 TODO: tell the reader how functions can have arguments with default values and guidelines around which argument is best to have a difficult value (usually they come last in the list)
 
+## [Variadic](#variadic)
+
+
  
 
