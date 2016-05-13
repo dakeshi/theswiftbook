@@ -15,11 +15,13 @@ The act of going shopping is the function that you will perform and all the item
 
 Function parameters have the following properties:
 
-* In-out specifier
+* In-out specifier (`inout`)
 * An internal name
 * An external name
 * A data type
-* [Variadic](#variadic) suffix
+* [Variadic](#variadic) suffix (`...`)
+
+
 
 ## [Examples](#examples)
 
