@@ -18,7 +18,7 @@ Function parameters have the following properties:
 * In-out specifier (`inout`)
 * An internal name
 * An external name
-* A data type
+* A data type (e.g. [String](string.md), Int, Double)
 * [Variadic](#variadic) suffix (`...`)
 
 
