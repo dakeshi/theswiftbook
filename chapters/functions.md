@@ -48,7 +48,7 @@ func fullName(firstName: String, lastName: String) -> String{
 }
 ```
 
-Function arguments can have two names:
+Function parameters can have two names:
 
 1. Internal
 2. External
