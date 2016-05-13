@@ -13,7 +13,15 @@ For instance, imagine that you are tasked with going shopping for a big dinner p
 
 The act of going shopping is the function that you will perform and all the items that were just listed will be the parameters to your function. In other words, you won't be able to go shopping if any of the aforementioned parameters/inputs are missing.
 
+Function parameters have the following properties:
 
+* An internal name
+* An external name
+* A data type
+
+## [Examples](#examples)
+
+Here is an example of a function with 1 parameter of tpye 
 
 ## [External Name](#external-name)
 
