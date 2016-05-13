@@ -48,7 +48,7 @@ func name(shortened: Bool, withoutSpace: Bool) -> String{
 }
 ```
 
-The name of this function is `name(_:withoutSpace:)`.
+The name of this function is therefore `name(_:withoutSpace:)`.
 
 ## [Examples](#examples)
 
