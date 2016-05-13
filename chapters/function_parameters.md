@@ -19,7 +19,7 @@ Function parameters have the following properties:
 * An internal name
 * An external name
 * A data type
-* Variadic suffix
+* [Variadic](#variadic) suffix
 
 ## [Examples](#examples)
 
