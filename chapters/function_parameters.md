@@ -14,6 +14,7 @@ For instance, imagine that you are tasked with going shopping for a big dinner p
 The act of going shopping is the function that you will perform and all the items that were just listed will be the parameters to your function. In other words, you won't be able to go shopping if any of the aforementioned parameters/inputs are missing.
 
 
+
 ## [External Name](#external-name)
 
 TODO: talk about external argument names here. Give examples
