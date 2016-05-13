@@ -63,7 +63,7 @@ func fullName(
 }
 ```
 
-You will learn more about function parameters later ([see here](function_arguments.md)).
+You will learn more about function parameters later ([see here](function_parameters.md)).
 
 ## [Versus Properties](#versus-properties)
 
