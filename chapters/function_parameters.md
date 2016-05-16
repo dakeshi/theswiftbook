@@ -68,7 +68,7 @@ Where `shortened` is the external parameter name and `short` is the internal nam
 
 Let's have a look at various functions with different blend of parameters.
 
-1. A function with no parameters:
+1. A function with one parameter:
 
 
 
