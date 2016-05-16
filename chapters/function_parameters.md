@@ -66,7 +66,11 @@ Where `shortened` is the external parameter name and `short` is the internal nam
 
 ## [Examples](#examples)
 
-TODO: give as many examples as possible
+Let's have a look at various functions with different blend of parameters.
+
+1. A function with no parameters:
+
+
 
 ## [External Name](#external-name)
 
