@@ -48,7 +48,21 @@ func name(shortened: Bool, withoutSpace: Bool) -> String{
 }
 ```
 
-The name of this function is therefore `name(_:withoutSpace:)`. For the first parameter's name to be mentioned in the function signature, it has to have an [internal](#internal-name) and an [external](#external-name) name.
+The name of this function is therefore `name(_:withoutSpace:)`. For the first parameter's name to be mentioned in the function signature, it has to have an [internal](#internal-name) and an [external](#external-name) name, as shown here:
+
+```swift
+func name(shortened short: Bool, withoutSpace: Bool) -> String{
+  if short{
+    return "Foo"
+  }
+  
+  if withoutSpace{
+    return "FooBar"
+  }
+  
+  return "Foo Bar"
+}
+```
 
 ## [Examples](#examples)
 
