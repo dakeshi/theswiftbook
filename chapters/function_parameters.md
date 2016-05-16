@@ -76,7 +76,15 @@ func isValid(name: String) -> Bool{
 }
 ```
 
-When you call this function, the `name` parameter will not be visible by the caller
+When you call this function, the `name` parameter will not be visible by the caller:
+
+```swift
+isValid("Foo Bar")
+```
+
+Therefore this might be difficult to understand by the caller. In this case, you have two choices:
+
+
 
 ## [External Name](#external-name)
 
