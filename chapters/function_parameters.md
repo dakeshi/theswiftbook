@@ -1,7 +1,5 @@
 # Function Parameters
 
-TODO: tell the reader what arguments are in a function and why they are useful and give examples of their syntax. also tell the reader about the fact that by default, the first argument of a function is not named when the function is called
-
 A function, [as we discussed previously](functions.md), can optionally have parameters. Think of a parameter as an input to the function, so that the function can carry out its job as it should.
 
 For instance, imagine that you are tasked with going shopping for a big dinner party tonight. What you need is:
