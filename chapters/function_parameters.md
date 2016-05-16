@@ -64,6 +64,8 @@ func name(shortened short: Bool, withoutSpace: Bool) -> String{
 }
 ```
 
+Where `shortened` is the external parameter name and `short` is the internal name. After specifying both an external and an internal name for the first parameter of a function, the parameter's name will become part of the function's signature, such as `name(shortened:withoutSpace:)`.
+
 ## [Examples](#examples)
 
 TODO: give as many examples as possible
