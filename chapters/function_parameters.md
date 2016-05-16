@@ -90,7 +90,15 @@ func isValid(name name: String) -> Bool{
 }
 ```
 
-... or change the function name so that the parameter name is part of the function name. Here is the 
+... or change the function name so that the parameter name is part of the function name as shown here:
+
+```swift
+func isValidName(name: String) -> Bool{
+  return name.characters.count > 10
+}
+```
+
+2. A function with 
 
 ## [External Name](#external-name)
 
@@ -110,6 +118,7 @@ TODO: tell the reader how functions can have arguments with default values and g
 
 ## [Variadic](#variadic)
 
+TODO: write about what variadics are and how they can be used in Swift and what their limitations are. Compare the usage of variadics with arrays and tell the reader why we use one over the other
 
  
 
