@@ -84,7 +84,7 @@ isValid("Foo Bar")
 
 Therefore this might be difficult to understand by the caller. In this case, you have two choices:
 
-1.1. 
+1.1. Hello
 
 ## [External Name](#external-name)
 
