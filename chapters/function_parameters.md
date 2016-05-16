@@ -82,9 +82,15 @@ When you call this function, the `name` parameter will not be visible by the cal
 isValid("Foo Bar")
 ```
 
-Therefore this might be difficult to understand by the caller. In this case, you have two choices:
+Therefore this might be difficult to understand by the caller. In this case, you have two choices: to either give an [external name](#external-name) to the parameter:
 
-1.1 Hello
+```swift
+func isValid(name name: String) -> Bool{
+  return name.characters.count > 10
+}
+```
+
+... or change the function name so that the parameter name is part of the function name. Here is the 
 
 ## [External Name](#external-name)
 
