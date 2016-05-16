@@ -70,7 +70,13 @@ Let's have a look at various functions with different blend of parameters.
 
 1. A function with one parameter:
 
+```swift
+func isValid(name: String) -> Bool{
+  return name.characters.count > 10
+}
+```
 
+When you call this function, the `name` parameter will not be visible by the caller
 
 ## [External Name](#external-name)
 
