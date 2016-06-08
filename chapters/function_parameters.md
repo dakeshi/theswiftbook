@@ -98,7 +98,7 @@ func isValidName(name: String) -> Bool{
 }
 ```
 
-2. A function with 
+2. A function with (WORK IN PROGRESS)...
 
 ## [External Name](#external-name)
 
