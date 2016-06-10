@@ -4,11 +4,76 @@ Arrays are an ordered, random-access collection of values of the same type. Beca
 
 ## [Syntax](#syntax)
 
-TODO: explain the creation of an array, implicitly and explicitly typed.
+Here is a simple way of creating an empty array:
+
+```swift
+var shoppingList: Array<String> = Array()
+var fruits: [String] = []
+var bucketList = [String]()
+```
+
+They are equivalent. It creates an empty array type of `String`. Instead of `Array<Element>`, you can use `[type]` expression to make simple syntax. It's the most preferred way to create the Array type.
+
+You can check whether or not an array is the empty.
+
+```swift
+if shoppingList.isEmpty {
+    print("an array is empty") // an array is empty
+}
+```
+
+Let's add some elements in an array. You can use an array literal to do that.
+
+```swift
+var intArrayOne: Array<Int> = [1, 2, 3]
+var intArrayTwo: [Int] = [4, 5, 6]
+```
+
+Using Swift's [Type Inference](data_types.md#type-inference), you can declare an array without the type annotation.
+
+```swift
+var intArrayThree = [7, 8, 9]
+```
+
+How to access an element in an array? An array provides an element's index to get a specific element in the array. The index number begins with `0`.
+
+```swift
+print(intArrayOne[0]) // 1
+print(intArrayOne[1]) // 2
+
+print(intArrayTwo[3]) // the runtime error
+```
+
+If you access the element with the wrong index number, the complier makes the runtime error. To avoid these kind of issues, an array provides some properties which return an optional type.
+
+```swift
+// first, last property return an optional type
+// use the optional binding to get access the value in the optional
+if let firstElement = intArrayTwo.first, lastElement = intArrayTwo.last {
+    print(firstElement, lastElement, separator: ", ") // 4, 6
+}
+```
 
 ## [Mutating](#mutating)
 
-TODO: write about creating mutable array of objects such as an array of integers and then append new items or even another array to it.
+If you assign an array to a variable, you can change elements in an array.
+
+```swift
+// add, remove and replace an element in the array
+shoppingList.append("apple") // ["apple"]
+shoppingList.append("mango")  // ["apple", "mango"]
+shoppingList.removeLast() // ["apple"]. Remove the last element
+shoppingList.insert("banana", at: 1) // ["apple", "banana"]. Insert element in the index 1
+shoppingList.insert("cherry", at: shoppingList.startIndex) // ["cherry", "apple", "banana"]. Insert element in startIndex, 0.
+shoppingList[1] = "orange" // ["cherry", "orange", "banana"]. Replace element in the index 1
+```
+
+Also, you can add multiple elements in an array.
+
+```swift
+// add multiple elements in another array
+fruits.append(contentsOf: shoppingList) // ["cherry", "orange", "banana"]
+```
 
 ## [Enumerating](#enumerating)
 
